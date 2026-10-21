@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10251e">
+    <title>Clima em Dados | História Climática</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <a class="marca" href="#">Clima<span>Dados</span></a>
+        <span class="etiqueta">CIÊNCIA E MEIO AMBIENTE</span>
+    </header>
+
+    <main class="container">
+        <section class="apresentacao">
+            <p class="sobretitulo">CIÊNCIA AO LONGO DO TEMPO</p>
+            <h1>A história do <span>clima.</span></h1>
+            <p class="descricao">
+                Descubra as principais descobertas científicas e os acontecimentos
+                que ajudaram a humanidade a compreender o efeito estufa e as
+                mudanças climáticas.
+            </p>
+        </section>
+
+        <section class="painel">
+            <h2>Eventos da história climática</h2>
+            <p class="texto-suave">
+                Explore os acontecimentos em ordem cronológica.
+            </p>
+
+            <label for="filtroAno">Filtrar por período</label>
+            <select id="filtroAno">
+                <option value="todos">Todos os anos</option>
+                <option value="1800">1800–1899</option>
+                <option value="1900">1900–1999</option>
+                <option value="2000">2000 em diante</option>
+            </select>
+
+            <button id="mostrarBtn" type="button">
+                Mostrar eventos <span aria-hidden="true">→</span>
+            </button>
+
+            <p id="status" role="status" aria-live="polite">
+                Selecione um período ou mostre todos os eventos.
+            </p>
+        </section>
+
+        <section id="resultados">
+            <div class="titulo-resultados">
+                <p class="sobretitulo">LINHA DO TEMPO</p>
+                <h2>Descobertas e acontecimentos</h2>
+            </div>
+
+            <div id="dados" class="grade-resultados"></div>
+
+            <section class="fontes">
+                <h2>Fontes e referências</h2>
+                <div id="referencias"></div>
+            </section>
+        </section>
+
+        <aside class="aviso">
+            <strong>Você sabia?</strong>
+            O efeito estufa natural é essencial para a vida na Terra.
+            O problema é a intensificação desse efeito pelo aumento de gases
+            de efeito estufa causado principalmente pelas atividades humanas.
+        </aside>
+    </main>
+
+    <footer>
+        <p>Projeto educativo sobre mudanças climáticas.</p>
+        <p>Consulte as referências para saber mais sobre cada evento.</p>
+    </footer>
+</body>
+</html>
